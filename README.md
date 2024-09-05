@@ -1,6 +1,8 @@
-# Simple Web application
+# Simple Web application with MFA
 
 This repository contains a simple web application written in Python. The application uses Python with the Flask web framework to simplify the development. This code was built on a MacBook Pro running MacOS Ventura 13.6.6, Python 3.11.4, and the Flask web framework version 3.0.3. Your environment may differ and work fine with other versions; it is a simple application.
+
+The application uses the Google Authenticator to provide a sample MFA implementation.
 
 # To use the code
 
