@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA Setup</title>
+</head>
+<body>
+    <h1>Scan this QR Code with Google Authenticator</h1>
+    <img src="{{ url_for('serve_qr_code') }}" alt="QR Code" width="150">
+    <p>After scanning, click below to verify your code.</p>
+
+    <!-- Changed method to POST -->
+    <form action="{{ url_for('verify_mfa') }}" method="POST">
+        <input type="submit" value="Proceed to Code Verification">
+    </form>
+</body>
+</html>
